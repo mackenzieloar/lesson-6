@@ -8,15 +8,18 @@
     <!--Links to css files or font files-->
     
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/framework.css">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
     
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
         <title>Assignment #1</title>   
    
     </head>    
  <body>
-  <div class="row">
-     <div class='col-12 border'>
+  <div class="container-fluid">
+     <div class="row">
+      <div class='col-md-12 border'>
          <header id="header">
       
        <h1>Web Ninja</h1>
@@ -29,12 +32,13 @@
      
      </div>
   <div class="row">
-     <div class='col-12 border'>
+     <div class='col-md-12 border'>
        <nav id="nav">
         <ul class='button-wrap'>
             <button>Schedule</button>
-            <button>CSS</button>
-            <button>HTML</button>
+            <button data-toggle="modal" data-target="#css3_modal"> CSS</button>
+            <button data-toggle="modal" data-target="#html5_modal">
+            HTML</button>
             <button>Responsive Design</button>
         </ul>
         
@@ -45,7 +49,7 @@
      </div>
   
         <div class='row max-width'>
-            <div class="col-8 border">
+            <div class="col-md-8 border">
                 <div id="main-content-wrapper">   
                     <div class="side-by-side">
                         <section class="image-content">
@@ -75,7 +79,7 @@
                 
                 </div>
             </div>
-        <div class="col-4 border">
+        <div class="col-md-4 border">
             <div id="aside-content-wrapper">
                 <aside id='aside-right'>
                     <h3>Latest Work</h3>
@@ -94,27 +98,78 @@
             </div>
 
       <div id="favorite-sites" class="row">
-       
-            <div class='col-4 border'>
-                <img src='images/insta.png'>
+       <div class="row">
+            <div class='col-md-4 border'>
+                <img class="img-responsive" src='images/insta.png'>
             </div>
-            <div class='col-4 border'>
-                <img src='images/google.png'>
+            <div class='col-md-4 border'>
+                <img class="img-responsive" src='images/google.png'>
             </div>
-            <div class='col-4 border'>
-                <img src='images/sc.png'>
+            <div class='col-md-4 border'>
+                <img class="img-responsive" src='images/sc.png'>
             </div>
-          
+          </div>
       
       </div>
        <div class="row">
-           <div class="col-12">
+           <div class="col-md-12">
       <footer><h1>Footy</h1></footer>
             </div>
       </div>
-      
+    </div>
 
-     <script scr="js/main.js"></script>
+<!-- Modal-HTML5  -->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="img-modal">
+          <img src="images/html5.png">
+            </div>
+          <br>
+          <p> <strong>html5</strong> is the latest evolution of the standard that defines HTML. The term represents two different concepts: It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows more diverse and powerful Web sites and applications</p>
+          <p>Source:</p><span> <a href='https://developer.mozilla.org/en-us/docs/Web/CSS/CSS3'>https://developer.mozilla.org/en-us/docs/Web/CSS/CSS3</a></span>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+     
+<!-- Modal-css3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+       <div class="img-modal">
+          <img src="images/css3.png">
+            </div>
+          <br>
+          <p> <strong>css5</strong> is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts</p>
+          <p>Source:</p><span> <a href='https://developer.mozilla.org/en-us/docs/Web/CSS/CSS3'>https://developer.mozilla.org/en-us/docs/Web/CSS/CSS3</a></span>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script scr="js/main.js"></script>
+     
+    
     </body>
      
    

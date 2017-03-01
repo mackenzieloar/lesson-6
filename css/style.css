@@ -35,7 +35,7 @@ body {
 }
 #nav > ul {
     text-align: center;
-    padding: 15px 0 15px 0;
+    padding:15px 0 15px 0;
     margin: 0;
 }
 
@@ -44,7 +44,7 @@ body {
     color: #fff;
     background-color: #FF008B;
     border: none;
-    padding: 15px 32px;
+    padding:  15px 32px;
     transition: background-color .25s;
     border-bottom: 2px solid #0076DE;
     
@@ -193,4 +193,16 @@ footer > h1 {
 .max-width {
     margin:0 auto;
     max-width: 960px;
+}
+/*Bootstrap Related*/
+ {
+    padding:0;
+}
+#favorite-sites > .row > .col-md-4> .img {
+    margin: 0 auto;
+}
+.img-responsive{ 
+    margin: 0 auto}
+.img-modal {
+    text-align: center;
 }
